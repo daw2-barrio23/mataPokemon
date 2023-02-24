@@ -4,7 +4,7 @@ import './scss/styles.scss'
 // Import all of Bootstrap's JS
 import * as bootstrap from 'bootstrap'
 
-import { home } from "./vistas/home";
+import {home} from "./vistas/home";
 import {header} from "./componentes/header"
 import {footer} from "./componentes/footer"
 
