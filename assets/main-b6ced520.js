@@ -5081,7 +5081,7 @@ class Toast extends BaseComponent {
 enableDismissTrigger(Toast);
 defineJQueryPlugin(Toast);
 const home = {
-  template: `<h1>home</h1>`
+  template: `<h1>estas en la pracica de matar un pokemon</h1>`
 };
 const header = {
   template: `header`
