@@ -5081,14 +5081,26 @@ class Toast extends BaseComponent {
 enableDismissTrigger(Toast);
 defineJQueryPlugin(Toast);
 const home = {
-  template: `<h1>estas en la pracica de matar un pokemon</h1>`
+  template: `<h1>Estas en la practica de matar un pokemon</h1>`,
+  script: () => {
+    console.log("estas en home");
+  }
 };
 const header = {
-  template: `header`
+  template: `header`,
+  script: () => {
+    console.log("estas en header");
+  }
 };
 const footer = {
-  template: `footer`
+  template: `footer`,
+  script: () => {
+    console.log("estas en footer");
+  }
 };
-document.querySelector("main").innerHTML = home.templeate;
-document.querySelector("header").innerHTML = header.templeate;
-document.querySelector("footer").innerHTML = footer.templeate;
+document.querySelector("header").innerHTML = header.template;
+header.script();
+document.querySelector("main").innerHTML = home.template;
+home.script();
+document.querySelector("footer").innerHTML = footer.template;
+footer.script();
