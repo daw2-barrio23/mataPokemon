@@ -1,3 +1,6 @@
 export const home = {
-    template: `<h1>Estas en la pracica de matar un pokemon</h1>`
+    template: `<h1>Estas en la practica de matar un pokemon</h1>`,
+    script:()=>{
+        console.log('estas en home')
+    } 
 }
